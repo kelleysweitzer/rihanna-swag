@@ -1,25 +1,23 @@
-/* #picture {
-  position:relative;
-} */
+
 #rihanna {
-  /* top:0;
-  left:0; */
     display: none;
-    /* position: absolute;
-    box-shadow:  5px 10px #888888; */
-    /* padding-bottom: 100px;
-    z-index: 1; */
   }
 
 
  #hands {
-  /* top:0; */
   display:none;
-  /* left:0;
-  position: absolute;
-  z-index: 100; */
-
 } 
+ 
+ #picture {
+   padding-bottom: 100px;
+ }
+ footer {
+   padding-top: 20px;
+   padding-bottom:20px;
+   background-color: pink;
+   text-align: center;
+   
+ }
 
 
 
