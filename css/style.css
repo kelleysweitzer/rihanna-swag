@@ -1,8 +1,27 @@
+/* #picture {
+  position:relative;
+} */
 #rihanna {
+  /* top:0;
+  left:0; */
     display: none;
-    box-shadow:  5px 10px #888888;
-    padding-bottom: 100px;
+    /* position: absolute;
+    box-shadow:  5px 10px #888888; */
+    /* padding-bottom: 100px;
+    z-index: 1; */
   }
+
+
+ #hands {
+  /* top:0; */
+  display:none;
+  /* left:0;
+  position: absolute;
+  z-index: 100; */
+
+} 
+
+
 
 body{
     font-family: 'Josefin Sans', sans-serif; /* Test for this*/
