@@ -1,6 +1,3 @@
-
-
-
 function drawBackgroundImage(canvas, ctx) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   const img = document.getElementById('rihanna'); 
@@ -25,10 +22,7 @@ function drawalbum2(src, canvas, ctx) {
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
   }
-  // drawhands(canvas, ctx);
-  
-  // img.onloadeddata = function () {
-  // }
+
   return image;
 }
 
@@ -111,8 +105,6 @@ onload = function() {
           console.log(albumURL);
           
       const album1 = drawalbum1(albumURL, canvas, ctx);
- 
-
         },
         
         error: function(e){
