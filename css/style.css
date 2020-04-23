@@ -11,13 +11,9 @@
  #picture {
    padding-bottom: 100px;
  }
- footer {
-   padding-top: 20px;
-   padding-bottom:20px;
-   background-color: pink;
-   text-align: center;
-   
- }
+
+
+
 
 
 
@@ -65,5 +61,13 @@ h1 {
   padding-bottom: 2em;
   box-shadow: black 3px;
   
+  
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom:20px;
+  background-color: pink;
+  text-align: center;
   
 }
