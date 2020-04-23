@@ -80,8 +80,6 @@ onload = function() {
     console.log(query1);
     var albumart = fetch(query1, query2, canvas, ctx);
     sessionStorage.clear();
-    // const hands = drawhands(canvas,ctx);
-
 
   }
   
