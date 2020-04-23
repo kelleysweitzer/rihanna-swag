@@ -25,6 +25,7 @@ function fetch(term1, term2, canvas, ctx){
         return e;
       }
     }
+    
     ); 
   
   
@@ -59,21 +60,8 @@ function fetch(term1, term2, canvas, ctx){
 
 function drawBackgroundImage(canvas, ctx) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  const img = document.getElementById('salt-bae');  
+  const img = document.getElementById('rihanna');  
   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-}
-
-
-function drawalbum1(src, canvas, ctx) {
-  // Create an image object. (Not part of the dom)
-  const image = new Image();
-  image.src = src;
-  
-  // After the image has loaded, draw it to the canvas
-  image.onload = function() {
-      ctx.drawImage(image, canvas.width - 410, canvas.height - 305, 220, 220);
-  }
-  return image;
 }
 
 
@@ -84,7 +72,20 @@ function drawalbum2(src, canvas, ctx) {
   
   // After the image has loaded, draw it to the canvas
   image.onload = function() {
-      ctx.drawImage(image, canvas.width - 855, canvas.height - 605, 220, 220);
+      ctx.drawImage(image, canvas.width - 280, canvas.height - 280, 220, 220);
+  }
+  return image;
+}
+
+
+function drawalbum1(src, canvas, ctx) {
+  // Create an image object. (Not part of the dom)
+  const image = new Image();
+  image.src = src;
+  
+  // After the image has loaded, draw it to the canvas
+  image.onload = function() {
+      ctx.drawImage(image, canvas.width - 730, canvas.height - 578, 220, 220);
   }
   return image;
 }
@@ -117,8 +118,7 @@ onload = function() {
 
   drawBackgroundImage(canvas, ctx);
   if(sessionStorage.length == 0) {
-    const album1 = drawalbum1('strokes.jpg', canvas, ctx);
-    const album2 = drawalbum2('strokes.jpg', canvas, ctx);
+    
   } else {
     var query1 = sessionStorage.getItem("album1") + " " + sessionStorage.getItem("artist1");
     var query2 = sessionStorage.getItem("album2") + " " +sessionStorage.getItem("artist2");
